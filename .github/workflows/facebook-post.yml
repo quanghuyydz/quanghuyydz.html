@@ -1,0 +1,38 @@
+# Đăng / hẹn giờ bài lên Fanpage từ máy chủ GitHub (không bị chặn mạng như môi trường Claude).
+# Cần secret FB_PAGE_TOKEN: Settings → Secrets and variables → Actions → New repository secret.
+# Chạy: tab Actions → "Đăng bài Facebook" → Run workflow.
+name: Đăng bài Facebook
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check = kiểm tra token · schedule = hẹn giờ cả lịch · now = đăng ngay 1 bài"
+        type: choice
+        options: [check, schedule, now]
+        default: check
+      post:
+        description: "Số bài (chỉ dùng với mode now), ví dụ 1"
+        required: false
+        default: ""
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Chạy script
+        env:
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+          FB_PAGE_ID: "61570966225470"
+          MODE: ${{ inputs.mode }}
+          POST: ${{ inputs.post }}
+        run: |
+          if [ "$MODE" = "now" ]; then
+            node facebook-capcut-7-ngay/scripts/post-to-facebook.cjs --now "$POST"
+          else
+            node facebook-capcut-7-ngay/scripts/post-to-facebook.cjs "--$MODE"
+          fi
