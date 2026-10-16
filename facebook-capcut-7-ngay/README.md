@@ -405,3 +405,25 @@ Chọn 1 trick bất kỳ ở trên, làm 1 video, rồi đăng link hoặc vide
 Cảm ơn bạn đã theo dõi suốt tuần qua ❤️ Chia sẻ bài này cho người bạn đang tập edit video nhé!
 
 #MỗiNgày1TrickCapCut #CapCut #EditVideo #ThửTháchCapCut
+
+---
+
+## Đăng tự động lên Fanpage
+
+Script: `scripts/post-to-facebook.cjs` (dùng Facebook Graph API chính thức, đăng ảnh kèm nội dung, hẹn đúng giờ Việt Nam).
+
+**Lấy Page Access Token (làm 1 lần):**
+1. Vào https://developers.facebook.com → **My Apps → Create App** → loại **Business**.
+2. Mở **Tools → Graph API Explorer**, chọn app vừa tạo → **Get Page Access Token**, cấp quyền `pages_show_list`, `pages_manage_posts`, `pages_read_engagement`.
+3. Ở ô “User or Page”, chọn Fanpage → copy token (đây là Page Token).
+4. Đổi sang token dài hạn bằng **Access Token Debugger → Extend Access Token** (token ngắn hạn hết hạn sau khoảng 1 giờ).
+5. Lưu token vào biến môi trường `FB_PAGE_TOKEN`. **Không dán token vào chat hay commit vào repo.**
+
+**Chạy:**
+```bash
+node facebook-capcut-7-ngay/scripts/post-to-facebook.cjs              # xem trước
+node facebook-capcut-7-ngay/scripts/post-to-facebook.cjs --check      # kiểm tra token đúng Fanpage
+node facebook-capcut-7-ngay/scripts/post-to-facebook.cjs --schedule   # hẹn giờ cả 14 bài
+node facebook-capcut-7-ngay/scripts/post-to-facebook.cjs --now 1      # đăng ngay bài 1
+```
+Sau khi hẹn giờ, bài nằm trong **Meta Business Suite → Nội dung → Đã lên lịch**, có thể sửa hoặc xóa ở đó.
