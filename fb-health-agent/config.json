@@ -1,0 +1,28 @@
+{
+  "page_name": "Sống Khoẻ Mỗi Ngày",
+  "language": "vi",
+  "timezone_offset_hours": 7,
+  "post_times": ["07:00", "19:30"],
+  "days_ahead": 7,
+  "model": "claude-sonnet-5-5",
+  "graph_api_version": "v23.0",
+  "tone": "gần gũi, tích cực, dễ hiểu, như một người bạn chia sẻ; không phán xét",
+  "pillars": [
+    "Dinh dưỡng & ăn uống lành mạnh (món ăn, thực đơn, mẹo đi chợ)",
+    "Vận động & tập luyện tại nhà, cho dân văn phòng",
+    "Giấc ngủ & nghỉ ngơi",
+    "Sức khoẻ tinh thần, giảm stress, chánh niệm",
+    "Thói quen buổi sáng / buổi tối",
+    "Uống nước, detox thói quen xấu (điện thoại, ngồi lâu)",
+    "Mẹo vặt cuộc sống hằng ngày giúp sống lành mạnh hơn",
+    "Câu hỏi tương tác / thử thách 7 ngày cho cộng đồng"
+  ],
+  "formats": [
+    "Danh sách mẹo (3-7 ý, có emoji đầu dòng)",
+    "Câu chuyện ngắn đời thường + bài học",
+    "Hỏi đáp: hiểu lầm phổ biến vs sự thật",
+    "Thử thách nhỏ trong ngày, kêu gọi bình luận",
+    "Công thức món ăn healthy đơn giản"
+  ],
+  "hashtags": ["#SongKhoe", "#SongLanhManh", "#HealthyLifestyle", "#MeoSongKhoe"]
+}

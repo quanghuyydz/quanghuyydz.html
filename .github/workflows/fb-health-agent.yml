@@ -1,0 +1,42 @@
+name: FB Health Content Agent
+
+on:
+  schedule:
+    # 20:00 Chủ nhật giờ Việt Nam (13:00 UTC) — soạn & hẹn giờ bài cho tuần tới
+    - cron: "0 13 * * 0"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "run = soạn + đăng ngay | generate = chỉ soạn để duyệt | schedule = đăng các bài đã duyệt"
+        default: run
+        type: choice
+        options: [run, generate, schedule]
+
+permissions:
+  contents: write
+
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: fb-health-agent
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+        run: python agent.py ${{ inputs.mode || 'run' }}
+      - name: Lưu queue/history vào repo
+        run: |
+          git config user.name "fb-health-agent"
+          git config user.email "actions@github.com"
+          git add -A .
+          git diff --cached --quiet || git commit -m "chore(agent): cập nhật lịch đăng bài"
+          git push
