@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ảnh thử · Sáng mệt? Thử hai phút này</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;800&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;height:100%;background:#e8efe6}
+body{display:flex;align-items:center;justify-content:center;overflow:hidden;font-family:'Be Vietnam Pro',sans-serif}
+#a{width:1080px;height:1350px;position:relative;background:#F4F8EE;transform-origin:center;flex:none;overflow:hidden}
+.top{position:absolute;left:80px;right:80px;top:70px}
+h1{margin:0;font-weight:800;font-size:112px;line-height:1.08;color:#1F5A3A;letter-spacing:-2px}
+h1 span{color:#E8962E}
+.sub{margin-top:36px;font-size:46px;line-height:1.3;color:#3E6B52}
+svg{position:absolute;left:0;top:620px}
+.foot{position:absolute;left:0;right:0;bottom:0;height:130px;background:#1F5A3A;color:#F4F8EE;display:flex;align-items:center;justify-content:space-between;padding:0 80px;font-size:36px}
+.foot b{font-weight:800}
+</style></head><body>
+<div id="a">
+ <div class="top"><h1>Sáng mệt?<br>Thử <span>hai phút</span> này</h1>
+ <div class="sub">Một ly nước, một khung cửa sổ</div></div>
+ <svg width="1080" height="620" viewBox="0 20 1080 620">
+  <!-- cửa sổ -->
+  <rect x="90" y="40" width="520" height="520" rx="18" fill="#BFE3F2" stroke="#1F5A3A" stroke-width="16"/>
+  <rect x="90" y="40" width="520" height="520" rx="18" fill="url(#sky)"/>
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A8"/><stop offset="1" stop-color="#CDEAF5"/></linearGradient></defs>
+  <circle cx="470" cy="170" r="70" fill="#F7B733"/>
+  <g stroke="#F7B733" stroke-width="10" stroke-linecap="round">
+   <path d="M470 60v-20M470 280v20M360 170h-20M580 170h20M392 92l-14-14M548 248l14 14M548 92l14-14M392 248l-14 14"/></g>
+  <path d="M90 560 Q350 420 610 560Z" fill="#8FC59B"/>
+  <path d="M350 40v520M90 300h520" stroke="#1F5A3A" stroke-width="16"/>
+  <!-- tia nắng trên bàn -->
+  <polygon points="90,560 610,560 900,640 380,640" fill="#FFE08A" opacity=".55"/>
+  <!-- bàn -->
+  <rect x="0" y="560" width="1080" height="100" fill="#D9B98A"/>
+  <!-- ly nước -->
+  <path d="M740 300 L940 300 L912 570 Q910 590 890 590 L790 590 Q770 590 768 570Z" fill="#DDF1FA" stroke="#1F5A3A" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M752 380 L928 380 L912 570 Q910 590 890 590 L790 590 Q770 590 768 570Z" fill="#8CCBE6" opacity=".85"/>
+  <path d="M790 330v30" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+ </svg>
+ <div class="foot"><b>Sống Khoẻ Mỗi Ngày</b><span>Lưu bài, mai sáng thử nhé</span></div>
+</div>
+<script>
+function f(){var s=Math.min(innerWidth/1080,innerHeight/1350,1);document.getElementById('a').style.transform='scale('+s+')'}
+addEventListener('resize',f);f();
+</script></body></html>
