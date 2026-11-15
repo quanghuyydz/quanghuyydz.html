@@ -1,0 +1,4 @@
+NGĂN CÔNG CỤ CỦA EDIT VIDEO
+- phu_de_whisper.py: tự nghe giọng làm phụ đề (chỉ dùng khi đã cài faster-whisper, xem HUONG-DAN-CAI-WIN-MAC.md).
+- ffmpeg.exe (Windows) hoặc ffmpeg (Mac): Edit video có thể chép công cụ ffmpeg vào đây sau khi cài, để lần sau dùng ngay.
+Bạn không cần mở hay sửa file nào trong ngăn này.

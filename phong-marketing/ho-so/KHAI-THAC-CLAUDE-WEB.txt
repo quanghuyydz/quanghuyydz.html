@@ -1,0 +1,22 @@
+Mình sắp dựng một phòng marketing AI cho công việc kinh doanh của mình. Hãy dựa vào bộ nhớ của bạn và những cuộc trò chuyện trước giữa chúng ta để viết bản "TÓM TẮT VỀ MÌNH".
+
+Luật:
+- Chỉ ghi điều mình đã thật sự nói hoặc cho bạn thấy. Không đoán, không suy diễn, không thêm cho hay.
+- Mục nào không biết thì ghi đúng hai chữ: chưa biết.
+- Lời khách khen, câu chuyện, con số: ghi gần nguyên văn nhất có thể.
+- Viết tiếng Việt, gạch đầu dòng ngắn.
+
+Trình bày TRONG MỘT KHUNG CODE để mình chép một lần, theo đúng các mục:
+1. Tên gọi, cách mình xưng hô
+2. Nghề, dịch vụ/sản phẩm chính, làm bao lâu, ở thành phố/nước nào
+3. Khách hàng của mình: là ai, tuổi, hoàn cảnh, họ hay gặp chuyện gì, họ hay hỏi gì
+4. Điều mình làm khác người cùng nghề, thế mạnh
+5. Lời khách từng khen mình (nguyên văn nếu có)
+6. Câu chuyện thật mình từng kể (nghề, gia đình, vượt khó)
+7. Quan điểm mình hay nói về nghề, về khách, về cuộc sống
+8. Kênh mình đang dùng (Facebook, TikTok, Instagram, Zalo, Google…), mình có quay video không
+9. Mục tiêu kinh doanh mình từng nhắc
+10. Điều mình không muốn làm hoặc không muốn nói khi làm marketing
+11. Cách mình viết/nói chuyện: câu dài hay ngắn, hay dùng từ gì, có pha tiếng Anh không
+
+Cuối khung thêm 1 dòng: "Độ chắc chắn: cao / vừa / thấp" cho cả bản tóm tắt.

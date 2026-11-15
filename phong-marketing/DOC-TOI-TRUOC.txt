@@ -1,0 +1,11 @@
+PHÒNG MARKETING AI · BẢN 2.1 (6/11/2026) · ĐỘI 7 NHÂN SỰ · 3 BƯỚC
+
+1. Mở app Claude trên máy tính (tài khoản gói Pro trở lên), bấm tab Code.
+2. Chọn thư mục này (PhongMarketingAI-Team, thư mục có file CLAUDE.md). App hỏi tin tưởng thư mục: bấm Yes / Trust.
+3. Mở file CAU-LENH-TRUONG-PHONG.txt, chép nguyên câu, dán vào ô gõ, bấm Enter.
+
+Lần đầu Trưởng phòng chào “Chào mừng bạn tới Phòng Marketing AI!” rồi hỏi bạn khoảng 15 câu.
+Có hồ sơ rồi thì bạn cứ nói việc, ví dụ: Lên 4 bài Facebook hôm nay.
+Máy hỏi “Cho phép?” (Allow?): bấm Allow.
+Không gõ mật khẩu, số thẻ, mã OTP vào Claude. Kẹt quá 10 phút: chụp màn hình nhắn Team TS.
+Hướng dẫn có hình: HUONG-DAN-CAI.md và thư mục anh-huong-dan.
